@@ -1,1 +1,145 @@
-<h1> hello world </h1>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Linktree - BAGUSCX</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 380px;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        background: linear-gradient(135deg, #00f2fe, #4facfe);
+        padding: 4px;
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        background: #111;
+      }
+
+      h1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      p {
+        font-size: 14px;
+        opacity: 0.8;
+        margin-bottom: 25px;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: #fff;
+        padding: 14px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        font-weight: 500;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .links a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: 0.5s;
+      }
+
+      .links a:hover::before {
+        left: 100%;
+      }
+
+      .links a:hover {
+        transform: translateY(-3px) scale(1.02);
+        background: rgba(255, 255, 255, 0.18);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      footer {
+        margin-top: 30px;
+        font-size: 12px;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="avatar">
+        <img
+          src="https://fw-fileupload-id.s3.ap-southeast-1.amazonaws.com/users/264dbabc-b39e-4df9-8787-38f73c6ea7d5/profile/8a21d5ec-f842-4600-8563-702bf5501510.webp"
+          alt="Avatar"
+        />
+      </div>
+
+      <h1>@baguscx</h1>
+      <p>Semua link penting ada di sini</p>
+
+      <div class="links">
+        <a href="https://sakaweb.id" target="_blank"
+          >🌐 SakaWeb - Jasa Pembuatan Website</a
+        >
+        <a href="https://invityo.id" target="_blank"
+          >🛒 Invityo - Undangan Digital Website</a
+        >
+        <a href="https://lynk.id/baguscx" target="_blank"
+          >📘 Ebook / Produk Digital</a
+        >
+        <a href="https://www.instagram.com/baguscxx" target="_blank"
+          >📷 Instagram</a
+        >
+        <a href="https://wa.me/628551199321" target="_blank">💬 WhatsApp</a>
+      </div>
+
+      <footer>© 2026 • Baguscx</footer>
+    </div>
+  </body>
+</html>
